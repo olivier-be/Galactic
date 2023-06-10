@@ -10,7 +10,7 @@ This is an RPG video game developed with Unity engine (Project S2 Epita).
 Manual available in the last realse
 
 # Trailer
-[![Video Title](https://img.youtube.com/vi/tadAf8uIUEI/0.jpg)](https://youtu.be/tadAf8uIUEI)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nkcXgelskQo/0.jpg)](https://www.youtube.com/watch?v=nkcXgelskQo)
 
 
 # Credit 
