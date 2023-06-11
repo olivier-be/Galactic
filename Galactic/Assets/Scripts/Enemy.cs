@@ -141,7 +141,8 @@ public class Enemy : MonoBehaviour
                 }
                 
                 _photonView.RPC("update_CanMove", RpcTarget.All);
-                PhotonNetwork.Destroy(_active_monster);
+                if (_photonView.IsMine || PhotonNetwork.IsMasterClient)
+                    PhotonNetwork.Destroy(_active_monster);
 
                
 
