@@ -13,6 +13,7 @@ using Random = System.Random;
 
 public class Game_Manager : MonoBehaviourPunCallbacks
 {
+    private string adresseETH;
     public bool use_old_inventory = true;
     public static bool attack;
     public static bool heal_Boost;
@@ -40,6 +41,9 @@ public class Game_Manager : MonoBehaviourPunCallbacks
     public static int desactivateAccessObjectFinalLevel = 0;
     public static Player2 Player2;
     public GameObject Playerturn;
+    
+    public InputField ETH;
+    
 
 
     void Start()
@@ -53,6 +57,7 @@ public class Game_Manager : MonoBehaviourPunCallbacks
         touch_MenuButton = false;
         healOrder = "";
         Player2 = GetComponent<Player2>();
+        ETH.text = "";
     }
 
     
@@ -86,6 +91,11 @@ public class Game_Manager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void activeETH()
+    {
+        this.adresseETH = ETH.text;
+        ETH.text = "";
+    }
     public void OpenInventory()
     {
         TouchButton = true;
