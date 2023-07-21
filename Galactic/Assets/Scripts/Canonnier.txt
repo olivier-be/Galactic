@@ -1,4 +1,5 @@
 type:Canonnier
 name:test
-life:10
+life:10000
+level:15
 inventory: Gun Sniper

@@ -313,6 +313,7 @@ public class Player2 : MonoBehaviour
 		{
 			Personnage.InSafeZone = true;
 			Debug.Log($"in and {Personnage.InSafeZone}");
+
 		}
 
 		if ((other.tag == "Equipement" && (Input.GetKey("e") || Input.GetKeyDown("e"))&& !other.gameObject.GetComponent<ItemInGame>().took))
@@ -383,7 +384,10 @@ public class Player2 : MonoBehaviour
 		}
 		if (other.tag == "Respawn")
 		{
-				
+			if (Game_Manager.time == 0)
+			{
+				Game_Manager.time = Time.time;
+			}
 			Personnage.InSafeZone = false;
 			Debug.Log($"out and {Personnage.InSafeZone}");
 		}

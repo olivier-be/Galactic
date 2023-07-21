@@ -329,6 +329,13 @@ public class Enemy : MonoBehaviour
                 
             
         }
+
+        if (Monster == EnumMonster.BossFinal)
+        {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<Game_Manager>().EndGame();
+            Debug.Log("endgame");
+        }
+        
     }
     
     [PunRPC]

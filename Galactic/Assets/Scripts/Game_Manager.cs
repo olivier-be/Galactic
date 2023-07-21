@@ -13,13 +13,18 @@ using Random = System.Random;
 
 public class Game_Manager : MonoBehaviourPunCallbacks
 {
+
+    private float timeend = 0;
     private string adresseETH;
     public bool use_old_inventory = true;
     public static bool attack;
     public static bool heal_Boost;
     public static bool changeGun;
 
+    public static float time = 0;
+
     public GameObject Choice_Canvas;
+    public GameObject Timer;
     public GameObject MyInventory;
     bool TouchButton;
     public GameObject Soldat_prefab;
@@ -60,6 +65,14 @@ public class Game_Manager : MonoBehaviourPunCallbacks
         ETH.text = "";
     }
 
+    public void EndGame()
+    {
+        if (!use_old_inventory)
+        {
+            time = Time.time - time;
+            
+        }       
+    }
     
     
     public void InventoryHealButtonTouch()
@@ -95,6 +108,7 @@ public class Game_Manager : MonoBehaviourPunCallbacks
     {
         this.adresseETH = ETH.text;
         ETH.text = "";
+        Debug.Log(adresseETH);
     }
     public void OpenInventory()
     {
