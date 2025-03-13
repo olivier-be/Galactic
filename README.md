@@ -2,12 +2,12 @@
 This is an RPG video game developed with Unity engine (Project S2 Epita).
 
 # Installation
-1. Use Galactic.msi (save, inventory and fight have bug).<br />
+1. Use Galactic.msi (save, inventory and fight don't work).<br />
 2. Use GalacticBuild.zip (work).<br />
 
 # Play
 
-Manual available in the last realse
+Manual available in the last release
 
 # Trailer
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nkcXgelskQo/0.jpg)](https://www.youtube.com/watch?v=nkcXgelskQo)
